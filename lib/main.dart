@@ -1,6 +1,6 @@
-import 'package:cv/constants/colors.dart';
-import 'package:cv/home_page.dart';
-import 'package:cv/utils/app.dart';
+import 'package:avinashgotluru/constants/colors.dart';
+import 'package:avinashgotluru/home_page.dart';
+import 'package:avinashgotluru/utils/app.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget with CustomColors{
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      // showSemanticsDebugger: true,
       navigatorKey: AppContext.navigatorState,
       debugShowCheckedModeBanner: false,
       // showSemanticsDebugger: true,

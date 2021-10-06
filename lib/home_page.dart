@@ -1,7 +1,7 @@
 import 'package:clay_containers/clay_containers.dart';
 import 'package:clay_containers/widgets/clay_container.dart';
-import 'package:cv/constants/colors.dart';
-import 'package:cv/utils/app.dart';
+import 'package:avinashgotluru/constants/colors.dart';
+import 'package:avinashgotluru/utils/app.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -18,7 +18,6 @@ class _HomePageState extends State<HomePage> with CustomColors, App {
       backgroundColor: scaffoldBackgroundColor,
       body: Stack(
         children: [
-
           Container(
             decoration: BoxDecoration(
               gradient: LinearGradient(
@@ -29,12 +28,20 @@ class _HomePageState extends State<HomePage> with CustomColors, App {
             ),
           ),
           Positioned(
-            right: - width * 0.17,
+            right: 0,
               bottom: 0,
               child: Image.asset(
                 'assets/images/coffee.png',
-                height: height * 0.6,
-                width: width * 0.6,
+                height: height * 0.4,
+                width: width * 0.1,
+              )),
+          Positioned(
+              left: 0,
+              top: 30,
+              child: Image.asset(
+                'assets/images/logo.png',
+                height: height * 0.2,
+                width: (width * 0.2) - 0,
               )),
           SingleChildScrollView(
             child: Column(
@@ -44,7 +51,8 @@ class _HomePageState extends State<HomePage> with CustomColors, App {
                   child: Center(
                     child: ClayContainer(
                       depth: 50,
-                      width: width * 0.5,
+                      emboss: true,
+                      width: width * 0.7,
                       height: height,
                       color: swatch4,
                       spread: 5,
@@ -54,8 +62,8 @@ class _HomePageState extends State<HomePage> with CustomColors, App {
                           children: const [Text('Avinash Gotluru')],
                         ),
                       ),
-                      parentColor: swatch2,
-                      surfaceColor: swatch4,
+                      parentColor: swatch3,
+                      surfaceColor: swatch3,
                       borderRadius: 15,
                     ),
                   ),
@@ -66,5 +74,11 @@ class _HomePageState extends State<HomePage> with CustomColors, App {
         ],
       ),
     );
+  }
+
+  List<Widget> list(){
+    return [
+      // Text('');
+    ];
   }
 }
