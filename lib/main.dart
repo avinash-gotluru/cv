@@ -1,5 +1,7 @@
 import 'package:avinashgotluru/constants/colors.dart';
 import 'package:avinashgotluru/home_page.dart';
+import 'package:avinashgotluru/screens/index.dart';
+import 'package:avinashgotluru/screens/my_app.dart';
 import 'package:avinashgotluru/utils/app.dart';
 import 'package:flutter/material.dart';
 
@@ -19,24 +21,23 @@ class MyApp extends StatelessWidget with CustomColors{
       // showSemanticsDebugger: true,
       title: 'Avinash Gotluru',
       theme: ThemeData(
-        primaryColor: const Color(0xFF03B7CC),
         primarySwatch: const MaterialColor(
-          0xFF03B7CC,
+          0xFF5352ED,
           <int, Color>{
-            50: Color(0xFF03B7CC),
-            100: Color(0xFF03B7CC),
-            200: Color(0xFF03B7CC),
-            300: Color(0xFF03B7CC),
-            400: Color(0xFF03B7CC),
-            500: Color(0xFF555555),
-            600: Color(0xFF555555),
-            700: Color(0xFF555555),
-            800: Color(0xFF555555),
-            900: Color(0xFF555555),
+            50: Color(0xFF5352ED),
+            100: Color(0xFF5352ED),
+            200: Color(0xFF5352ED),
+            300: Color(0xFF5352ED),
+            400: Color(0xFF5352ED),
+            500: Color(0xFFFFFFFF),
+            600: Color(0xFFFFFFFF),
+            700: Color(0xFFFFFFFF),
+            800: Color(0xFFFFFFFF),
+            900: Color(0xFFFFFFFF),
           },
         ),
       ),
-      home: const SafeArea(child: HomePage(),),
+      home:  SafeArea(child: MyHomePage(),),
     );
   }
 }

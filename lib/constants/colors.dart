@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 mixin CustomColors {
-  final Color primaryColor = const Color(0xFF02CFE6);
+  final Color primaryColor = const Color(0xFF5352ED);
   final Color accentColor = const Color(0xFFF4F4F4);
   final Color backgroundColor = Colors.white;
   final Color swatch1 = const Color(0xFF0A0D15);
